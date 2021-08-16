@@ -1,27 +1,27 @@
 import './App.css';
-import Profile from './profil/Profile';
-import Statistic from './statistic/Statistic';
-import Friends from './friends/FriendList';
-import TransactionHistory from './transaktion/TransactionHistory';
-import statData from './statistic/statistics.json';
-import user from './profil/user.json';
-import FriendsDB from './friends/friends.json';
-import transaction from './transaktion/transaction.json';
+import Profile from './component/profil/Profile';
+import Statistic from './component/statistic/Statistic';
+import Friends from './component/friends/FriendList';
+import TransactionHistory from './component/transaktion/TransactionHistory';
+import statData from './json/statistics.json';
+import user from './json/user.json';
+import friendsDB from './json/friends.json';
+import transaction from './json/transaction.json';
 
 function App() {
   return (
-     <div className="App">
+    <div className="App">
       <Profile
         name={user.name}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats} />
-      
-      <Statistic
-        title="Upload stats" stats={statData} />
-      
-      <Friends friends={FriendsDB} />
+        stats={user.stats}
+      />
+
+      <Statistic title="Upload stats" stats={statData} />
+
+      <Friends friends={friendsDB} />
 
       <TransactionHistory items={transaction} />
     </div>

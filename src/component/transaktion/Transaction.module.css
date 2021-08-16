@@ -1,0 +1,12 @@
+.transactionHistory {
+  background-color: tomato;
+  width: 450px;
+}
+
+.transactionHead {
+  background-color: turquoise;
+}
+
+.elementHistory {
+  background-color: #fff;
+}

@@ -1,0 +1,14 @@
+.statistics {
+  margin-top: 15px;
+  background-color: rgb(158, 170, 48);
+}
+.title {
+  text-align: center;
+}
+
+.statList {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
