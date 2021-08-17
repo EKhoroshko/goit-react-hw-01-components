@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import OneLine from './oneLine';
+import ElementHistory from './ElementHistory';
 import css from '../transaktion/Transaction.module.css';
 
 function TransactionHistory({ items }) {
@@ -15,7 +15,7 @@ function TransactionHistory({ items }) {
 
       <tbody>
         {items.map(item => (
-          <OneLine
+          <ElementHistory
             key={item.id}
             type={item.type}
             amount={item.amount}
@@ -29,7 +29,6 @@ function TransactionHistory({ items }) {
 
 TransactionHistory.propTypes = {
   items: PropTypes.array,
-  key: PropTypes.string,
 };
 
 export default TransactionHistory;
